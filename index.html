@@ -1,19 +1,116 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Weather App</title>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+
+  <body>
+    <div class="container">
+
+      <div class="row">
+        <form class="col s12">
+            <h4>Weather App</h4>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="citySearch" type="text" placeholder="Search for your City!" class="validate">
+              <a class="waves-effect waves-light btn" id="searchBtn">Submit</a>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <div class="cityResults" id="cityResults">
+                </div><br>
+                <a class="waves-effect waves-light btn" id="clearBtn">Remove all Cities</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row resultsBox">
+        <div class="col s12 m12">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+                    <div class="container-fluid mx-1 my-3 px-4 py-2 currentWeatherBox" id="currentWeatherBox">
+                <h2 id="city" class="d-inline"></h2><span id="date"></span><br>
+                <i><span id="description"></span></i>
+                <img id="weatherImg" class="weatherImg">
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+                <p id="uv"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row resultsBox">
+        <div class="col s12 m12">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">5 Day Forecast</span>
+              <div class="container-fluid my-1 mx-4 futureWeatherBox pb-2" id="weather">
+                <h2 id="fiveDays"></h2>
+                <div class="row">
+                  <div class="col-sm-2 five-dates mb-2 pb-1" id="date1"></div>
+                  <div class="col-sm-2 five-dates mb-2 pb-1" id="date2"></div>
+                  <div class="col-sm-2 five-dates mb-2 pb-1" id="date3"></div>
+                  <div class="col-sm-2 five-dates mb-2 pb-1" id="date4"></div>
+                  <div class="col-sm-2 five-dates mb-2 pb-1" id="date5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Weather App</h5>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">UNC Bootcamp</h5>
+          <ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Diantai
+      <a class="grey-text text-lighten-4 right" href="#!">Johnson</a>
+      </div>
+    </div>
+  </footer>
+  
+</div>
+
+
   <script src="script.js"></script>
 </body>
+
 </html>

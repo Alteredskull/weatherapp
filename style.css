@@ -1,3 +1,5 @@
-h1 {
-    color:blue;
+.five-dates {
+    display:inline;
+    float:left;
+    padding: 30px;
 }
