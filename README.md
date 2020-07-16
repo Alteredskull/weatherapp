@@ -1,5 +1,5 @@
-# weatherapp
-Creating a weather application
+# Weatherapp
+A weather dashboard that allows you to check the forecast for various places 
 
 ## User Story
 
